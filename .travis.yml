@@ -70,6 +70,4 @@ script:
  - mkdir config.travis
  - cp ../*.* config.travis
  - env TRAVIS=1 make -j2 debug
- - env TRAVIS=1 make -j2 release
  - env TRAVIS=1 make tests -C Debug
- - env TRAVIS=1 make tests -C Release
