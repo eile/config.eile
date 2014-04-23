@@ -1,0 +1,7 @@
+
+set(PIXIE_PACKAGE_VERSION 2.2)
+set(PIXIE_REPO_URL https://github.com/eile/pixie)
+set(PIXIE_DEPENDS )
+set(PIXIE_DEB_DEPENDS )
+set(PIXIE_PORT_DEPENDS )
+set(PIXIE_FORCE_BUILD ${CI_BUILD})
