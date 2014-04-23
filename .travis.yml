@@ -28,6 +28,7 @@ before_install:
  - sudo apt-get install -qq libboost-chrono-dev || /bin/true
  - sudo apt-get install -qq libboost-date-time-dev || /bin/true
  - sudo apt-get install -qq libboost-filesystem-dev || /bin/true
+ - sudo apt-get install -qq libboost-iostreams-dev || /bin/true
  - sudo apt-get install -qq libboost-program-options-dev || /bin/true
  - sudo apt-get install -qq libboost-python-dev || /bin/true
  - sudo apt-get install -qq libboost-regex-dev || /bin/true
@@ -72,4 +73,4 @@ script:
  - mkdir config.travis
  - cp ../*.* config.travis
  - env TRAVIS=1 make -j2 debug
- - env TRAVIS=1 make tests -C Debug
+ - env TRAVIS=1 make tests ARGS=-V -C Debug
