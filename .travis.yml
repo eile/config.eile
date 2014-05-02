@@ -57,6 +57,7 @@ before_install:
  - sudo apt-get install -qq libswscale-dev || /bin/true
  - sudo apt-get install -qq libtclap-dev || /bin/true
  - sudo apt-get install -qq libturbojpeg || /bin/true
+ - sudo apt-get install -qq libudev-dev || /bin/true
  - sudo apt-get install -qq libudt-dev || /bin/true
  - sudo apt-get install -qq libvncserver-dev || /bin/true
  - sudo apt-get install -qq libvtk5-dev || /bin/true
